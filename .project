@@ -3,7 +3,7 @@
 	<name>sw_motor_control</name>
 	<comment></comment>
 	<projects>
-		<project>sc_pwm</project>
+		<project>ethercat_module</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
