@@ -8,3 +8,9 @@
 # optimization level -O3).
 #
 # You can also set MODULE_XCC_C_FLAGS, MODULE_XCC_XC_FLAGS etc..
+
+
+MODULE_XCC_FLAGS = $(XCC_FLAGS) -g -O0
+
+#SOURCE_DIRS += ./src
+#INCLUDE_DIRS += ./src
