@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>sw_motor_control</name>
+	<name>sc_somanet-base</name>
 	<comment></comment>
 	<projects>
 		<project>ethercat_module</project>
