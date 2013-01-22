@@ -1,0 +1,1 @@
+use #define's to set IFM_CORE and COM_CORE depending on the core board used

@@ -1,0 +1,9 @@
+1.	Configure the nodestack, e.g.:
+
+	#define SOMANET_CORE c22
+	#define SOMANET_COM ecat
+	#define SOMANET_IFM dc900-rev-a
+	
+	check *.inc files to get a list of supported boards
+
+2.	Include ioports.h
