@@ -1,7 +1,9 @@
 #pragma once
 
 #include "filename_macro.h"
-//#include "../somanet.h"
+
+// read node configuration from header file provided in the app using this module
+#include <nodeconfig.h>
 
 #ifndef SOMANET_CORE
 #define SOMANET_CORE null

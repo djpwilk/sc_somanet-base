@@ -37,7 +37,7 @@ on stdcore[3]: buffered out port:32 p_ifm_motor_lo[3] = { XS1_PORT_1L,   /* Lo A
 //					      XS1_PORT_1N }; /* Lo C */
 
 /* LEDs, Watchdog */
-on stdcore[3]: out port p_ifm_shared_leds_wden = XS1_PORT_4B; /* BlueGreenRed_Green */
+on stdcore[3]: out port p_ifm_shared_leds_wden = XS1_PORT_4B; /* BlueGreenRed_WDEN */
 
 /* Expansion Port */
 on stdcore[3]: port p_ifm_ext_d0 = XS1_PORT_1A;
