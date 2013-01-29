@@ -30,7 +30,7 @@ fl_SPIPorts SPI = { PORT_SPI_MISO,
  		PORT_SPI_SS,
 		PORT_SPI_CLK,
 		PORT_SPI_MOSI,
-		XS1_CLKBLK_1 };
+		XS1_CLKBLK_2 };
 
 int write_state = IDLE;
 int start_flash = START_FLASH;
