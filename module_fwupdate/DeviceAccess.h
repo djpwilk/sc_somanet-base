@@ -1,3 +1,20 @@
+
+/**
+ * \file DeviceAccess.h
+ *
+ * Copyright 2013, Synapticon GmbH. All rights reserved.
+ *
+ * All code contained in this package under XMOS copyright must be
+ * licensing for any use from XMOS. Please contact support@xmos.com for
+ * details of licensing.
+ *
+ * In the case where this code is a modification of existing code
+ * under a separate license, the separate license terms are shown
+ * below. The modifications to the code are still covered by the
+ * copyright notice above.
+ *
+ **/
+
 #ifndef HAVE_DEVICEACCESS_H_
 #define HAVE_DEVICEACCESS_H_
 

@@ -1,10 +1,16 @@
 
-/*
- * flash_write.c
+/**
+ * \file flash_write.c
  *
- *  Created on: May 2, 2012
- *      Author: pkanajar @ Synapticon
- */
+ * Copyright 2013, Synapticon GmbH. All rights reserved.
+ * Author: Pavan Kanajar <pkanajar@synapticon.com>
+ *
+ * In the case where this code is a modification of existing code
+ * under a separate license, the separate license terms are shown
+ * below. The modifications to the code are still covered by the
+ * copyright notice above.
+ *
+ **/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,14 +25,12 @@ void flash_erase()
 	fl_eraseAll();
 }
 
-
 // flash connect defined in upgrade xc file
 extern int flash_connect();
 
-
-void flash_setup(int factory)  //FIXME could have arguments to specify the upgarde image
+void flash_setup(int factory)  // could have arguments to specify the upgarde image
 {
-	 fl_BootImageInfo bii;  // struct to hold image info
+	 //fl_BootImageInfo bii;  // struct to hold image info
 
 	 //communicate with spi flash
 	 if( 0 == flash_connect() )
@@ -36,7 +40,7 @@ void flash_setup(int factory)  //FIXME could have arguments to specify the upgar
 	 }
 
 	 // get Factory details into bootinfo struct bii
-	 if(0 != fl_getFirstBootImage(&bii))
+	 /*if(0 != fl_getFirstBootImage(&bii))
 	 {
 		  //printf("%s\n", "No factory image found, erase not required");
 	 }
@@ -47,7 +51,7 @@ void flash_setup(int factory)  //FIXME could have arguments to specify the upgar
 
 
 		 }
-	 }
+	 }*/
 	 fl_setProtection(0);
 	 flash_erase();
 	 // Disable flash protection for writing image
@@ -82,7 +86,12 @@ int flash_buf_end(void)
 }
 
 
-// example function showing how to use the Flash_module
+
+
+
+
+
+/* example function showing how to use the Flash_module
 //void re_file_to_flash(char file_name[], unsigned int factory)
 //{
 
@@ -92,7 +101,7 @@ int flash_buf_end(void)
 	// flash_buf(content, imageSize);
 	 //flash_buf_end();
 
-/*	  if(factory == 0) // upgrade image boot file info setup
+	  if(factory == 0) // upgrade image boot file info setup
 	  {
 		  nbii.size = imageSize;
 		  nbii.factory = 0; //not factory upgarde
@@ -103,29 +112,29 @@ int flash_buf_end(void)
 
 	  if(factory == 1) // routine to add factory image (based on requested operation Factory as 1)
 	  {
-		 /* if(0 != flash_addFactoryImage(0, imageSize, &supplyData, (void*)inFile)) {
-			  fprintf(stderr,"Error: failed to add new boot image.\n");
-			  fclose(inFile);
-			  fl_disconnect();
-			  exit(1);
-		  }*/
+		 // if(0 != flash_addFactoryImage(0, imageSize, &supplyData, (void*)inFile)) {
+			//  fprintf(stderr,"Error: failed to add new boot image.\n");
+			//  fclose(inFile);
+			// fl_disconnect();
+			//  exit(1);
+		 // }
 		 // printf("Factory boot image added.\n");
 	 // }
-	/*  else if(factory == 0) // routine to add upgarde image  (based on requested operation Factory as 0)
+	//  else if(factory == 0) // routine to add upgarde image  (based on requested operation Factory as 0)
 	  {
-		  /*if(0 != fl_addBootImage(&nbii, nbii.size, &supplyData, (void*)inFile)) {
-			  fprintf(stderr,"Error: failed to add new boot image.\n");
-			  fclose(inFile);
-			  fl_disconnect();
-			  exit(1);
-		  }*/
+		  //if(0 != fl_addBootImage(&nbii, nbii.size, &supplyData, (void*)inFile)) {
+			//  fprintf(stderr,"Error: failed to add new boot image.\n");
+			//  fclose(inFile);
+			//  fl_disconnect();
+			//  exit(1);
+		  //}
 		//  printf("Upgarde boot image added.\n");
-	 /* }
+	 // }
 
 	  fl_setProtection(1); // protect image
 	  fl_disconnect();	   // suspend spi flash communication
+
+
+}
 */
-
-//}
-
 

@@ -1,17 +1,24 @@
 
-/*
- * flashlib.c
+/**
+ * \file flashlib.c
  *
+ * Copyright 2013, Synapticon GmbH. All rights reserved.
  *
- *      Author: XMOS
- */
-
+ * All code contained in this package under XMOS copyright must be
+ * licensing for any use from XMOS. Please contact support@xmos.com for
+ * details of licensing.
+ *
+ * In the case where this code is a modification of existing code
+ * under a separate license, the separate license terms are shown
+ * below. The modifications to the code are still covered by the
+ * copyright notice above.
+ *
+ **/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <xclib.h>
-
 #include <flashlib.h>
 #include "DeviceAccess.h"
 #include "SpecDefinitions.h"
@@ -855,7 +862,7 @@ int fl_startImageRead(fl_BootImageInfo *bootImageInfo)
   fl_imageReadState.limitAddress = limitAddress;
   return 0;
 }
-
+/*  comment to avoid conflict
 int fl_readImageRead(unsigned char page[])
 {
   unsigned pageSize = fl_getPageSize();
@@ -866,7 +873,7 @@ int fl_readImageRead(unsigned char page[])
   fl_imageReadState.currentAddress += pageSize;
   return 0;
 }
-
+*/
 /* Query and modify data in the store partition.
 *  Addresses are offsets in the store, not flash addresses.
 */
