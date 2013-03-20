@@ -45,17 +45,11 @@ int main(void)
 			ecat_handler(coe_out, coe_in, eoe_out, eoe_in, eoe_sig, foe_out, foe_in, pdo_out, pdo_in);
 		}
 
-		on stdcore[1] : {
-			consumer(coe_in, coe_out, eoe_in, eoe_out);
-		}
-
 		on stdcore[0] : {
 			check_file(foe_out, foe_in, sig_1); // firmware update
 		}
 
-		on stdcore[1] : {
-			pdo_handler(pdo_out, pdo_in);
-		}
+
 
 	}
 

@@ -10,7 +10,7 @@ TARGET = C22
 APP_NAME = 
 
 # The USED_MODULES variable lists other module used by the application.
-USED_MODULES = module_ethercat module_fwupdate module_nodeconfig
+USED_MODULES = module_fwupdate module_nodeconfig sc_sncn_ethercat/module_ethercat
 
 # The flags passed to xcc when building the application
 # You can also set the following to override flags for a particular language:

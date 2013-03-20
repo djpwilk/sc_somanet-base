@@ -23,7 +23,7 @@
 #include <ethercat.h>
 #include <foefs.h>
 
-#define MAX_BUFFER_SIZE   7400//  not flash requirement coe req
+#define BUFFER_SIZE 5200	//   flash requirement
 
 extern void flash_setup(int factory);
 extern int 	flash_buf_end(void);

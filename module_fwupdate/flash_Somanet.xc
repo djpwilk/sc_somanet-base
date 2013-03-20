@@ -20,17 +20,17 @@
 #define END_FLASH 26;
 #define FLASH 1;
 #define IDLE 0;
-#define BUFFER_SIZE 7400
+
 
 /* initializers defined in XN file
 * and available via somanet header files */
 // SPI port definitions
 
 fl_SPIPorts SPI = { PORT_SPI_MISO,
- 		PORT_SPI_SS,
-		PORT_SPI_CLK,
-		PORT_SPI_MOSI,
-		XS1_CLKBLK_2 };
+ 					PORT_SPI_SS,
+ 					PORT_SPI_CLK,
+ 					PORT_SPI_MOSI,
+ 					XS1_CLKBLK_2 };
 
 int write_state = IDLE;
 int start_flash = START_FLASH;
@@ -62,7 +62,7 @@ void chipReset(void)				//	auto reset from software
 
 int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 {
-	char buffer[7400];
+	char buffer[BUFFER_SIZE];
 	unsigned i=0;
 	int ctmp;
 	unsigned size;
