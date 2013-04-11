@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <flash_Somanet.h>
-#include <ethercat_handlers.h>
+#include <ethercat.h>
 
 
 int main(void)
