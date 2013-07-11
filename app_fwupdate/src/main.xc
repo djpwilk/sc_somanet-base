@@ -46,10 +46,8 @@ int main(void)
 		}
 
 		on stdcore[0] : {
-			check_file(foe_out, foe_in, sig_1); // firmware update
+			firmware_update(foe_out, foe_in, sig_1); // firmware update
 		}
-
-
 
 	}
 

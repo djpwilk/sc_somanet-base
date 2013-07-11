@@ -23,13 +23,21 @@
 #include <ethercat.h>
 #include <foefs.h>
 
-#define BUFFER_SIZE 5200	//   flash requirement
+#define BUFFER_SIZE 2400	//   flash requirement
 
 extern void flash_setup(int factory);
 extern int 	flash_buf_end(void);
 extern void chipReset(void);
 extern void flash_buffer(char content[], int imageSize, unsigned address);
-extern void check_file(chanend foe_comm, chanend foe_signal, chanend reset);
+
+/**
+ *  \brief
+ *   Firmware update function (should be on CORE 0)
+ *
+ */
+extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset);
+
+
 extern void get_file(chanend foe_out, char filename[]);
 
 

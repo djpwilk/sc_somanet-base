@@ -149,7 +149,7 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 }
 
 
-extern void check_file(chanend foe_comm, chanend foe_signal, chanend reset)
+extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset)
 {
 	timer t;
 	unsigned time = 0;
