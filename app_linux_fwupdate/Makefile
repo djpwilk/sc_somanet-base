@@ -17,10 +17,10 @@ CFLAGS = -O2 -Wall -g
 LFLAGS = -O2 -lpthread -lm -lrt -lc -Wall -g
 
 
-all:	fw_update slaveinfo
+all:	fw_update slaveinfo	
 	rm src/*.o 
-	mv slaveinfo bin
-	mv fw_update bin
+	mv slaveinfo
+	mv fw_update
 
 
 fw_update:  src/$(obj9).o src/$(obj8).o src/$(obj5).o src/$(obj10).o src/$(obj3).o src/$(obj6).o src/$(obj2).o src/$(obj1).o src/$(obj13).o
@@ -35,6 +35,6 @@ obj/%.o:src/%.c
 	
 	
 # Removing the executable and the object files
-clean: 
-	rm bin/slaveinfo bin/fw_update		
+clean:	
+	rm slaveinfo fw_update			
 	echo clean: make complete
