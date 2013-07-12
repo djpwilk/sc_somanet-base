@@ -1,39 +1,32 @@
 
 CC = gcc
-TARGET = fw
-EXEC = ethercatconfig
-ex1= ethercatcoe
-ex2= ethercatfoe
-ex3=ethercatmain
-ex4=ethercatconfiglist
-ex5= ethercatprint
-ex6= ethercatbase
-ex7=ethercattype
-ex8=nicdrv
-ex9=fw_update
-ex10=ethercatsoe
-ex11=slaveinfo
-ex12=ethercatdc
+obj1= ethercatcoe
+obj2= ethercatfoe
+obj3=ethercatmain
+obj4=ethercatconfiglist
+obj5= ethercatprint
+obj6= ethercatbase
+obj7=ethercattype
+obj8=nicdrv
+obj9=fw_update
+obj10=ethercatsoe
+obj11=slaveinfo
+obj12=ethercatdc
+obj13 = ethercatconfig
 CFLAGS = -O2 -Wall -g
 LFLAGS = -O2 -lpthread -lm -lrt -lc -Wall -g
 
 
-
-LINKER   = gcc -o
-
-
-
-# The default rule - compiling our main program:
 all:	fw_update slaveinfo
 	rm src/*.o 
 	mv slaveinfo bin
 	mv fw_update bin
 
 
-fw_update:  src/$(ex9).o src/$(ex8).o src/$(ex5).o src/$(ex10).o src/$(ex3).o src/$(ex6).o src/$(ex2).o src/$(ex1).o src/$(EXEC).o
+fw_update:  src/$(obj9).o src/$(obj8).o src/$(obj5).o src/$(obj10).o src/$(obj3).o src/$(obj6).o src/$(obj2).o src/$(obj1).o src/$(obj13).o
 	$(CC) -o $@ $+ $(LFLAGS)
  
-slaveinfo:  src/$(ex11).o src/$(ex8).o src/$(ex5).o src/$(ex10).o src/$(ex3).o src/$(ex6).o src/$(ex12).o src/$(ex1).o src/$(EXEC).o
+slaveinfo:  src/$(obj11).o src/$(obj8).o src/$(obj5).o src/$(obj10).o src/$(obj3).o src/$(obj6).o src/$(obj12).o src/$(obj1).o src/$(obj13).o
 	$(CC) -o $@ $+ $(LFLAGS)
 # Tell make how to build .o files from .c files:
 obj/%.o:src/%.c
