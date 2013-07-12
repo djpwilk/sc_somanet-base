@@ -14,7 +14,7 @@
 
 #include <platform.h>
 #include <stdio.h>
-#include <flash_Somanet.h>
+#include <flash_somanet.h>
 
 #define START_FLASH 12;
 #define END_FLASH 26;

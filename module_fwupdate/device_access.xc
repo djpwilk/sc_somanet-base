@@ -17,7 +17,7 @@
 
 #include <xclib.h>
 #include <xs1.h>
-#include "DeviceAccess.h"
+#include "device_access.h"
 
 extern fl_PortHolderStruct g_portHolder;
 extern int g_fl_int_doWaitForCompletion;

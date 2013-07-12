@@ -20,8 +20,8 @@
 #include <string.h>
 #include <xclib.h>
 #include <flashlib.h>
-#include "DeviceAccess.h"
-#include "SpecDefinitions.h"
+#include "device_access.h"
+#include "spec_definitions.h"
 
 #define IMAGETAG (0x1a551e5)
 

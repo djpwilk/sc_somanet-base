@@ -19,7 +19,7 @@
 #include <print.h>
 #include <stdio.h>
 #include <stdint.h>
-#include <flash_Somanet.h>
+#include <flash_somanet.h>
 #include <ethercat.h>
 
 
