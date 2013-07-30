@@ -26,7 +26,7 @@
 * and available via somanet header files */
 // SPI port definitions
 
-fl_SPIPorts SPI = { PORT_SPI_MISO,
+on stdcore[0]:fl_SPIPorts SPI = { PORT_SPI_MISO,
  					PORT_SPI_SS,
  					PORT_SPI_CLK,
  					PORT_SPI_MOSI,
