@@ -6,12 +6,12 @@
  *
  * Usage: fw_update eth0 OPTION id filepath 
  *    OPTION:
- *   -s     specify serial number for the ethercat slave\n");
- *   -seq   specify slave number in EtherCAT order 1..n\n");
- *   -all   use all slaves connected to the system\n");
- *   -scan  scan the slave/slaves connected and display their serial number\n");
+ *   -s     specify serial number for the ethercat slave
+ *   -seq   specify slave number in EtherCAT order 1..n
+ *   -all   use all slaves connected to the system
+ *   -scan  scan the slave/slaves connected and display their serial number
  *
- *   specify the number after options for these options -s & -seq followed //path//to//your//file
+ *   specify the ID number after options for these options -s & -seq followed by  /path/to/your/file
  *
  * SOEM is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License version 2 as published by the Free
