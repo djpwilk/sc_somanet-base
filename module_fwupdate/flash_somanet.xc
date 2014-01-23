@@ -41,6 +41,7 @@
 #include <platform.h>
 #include <stdio.h>
 #include <flash_somanet.h>
+#include <print.h>
 
 #define START_FLASH 12;
 #define END_FLASH 26;
@@ -210,22 +211,22 @@ extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset)
 
 		foe_comm :> ctmp;
 		switch (ctmp) {
-		case FOE_FILE_ERROR:
-			//printstr("Error file is not ready\n");
-			break;
+			case FOE_FILE_ERROR:
+				//printstr("Error file is not ready\n");
+				break;
 
-		case FOE_FILE_ACK:
-			/* File is ready read it and print to std. out */
-			address = check_file_access(foe_comm, address, reset);
-			break;
+			case FOE_FILE_ACK:
+				/* File is ready read it and print to std. out */
+				address = check_file_access(foe_comm, address, reset);
+				break;
 
-		default:
-			//printstr("Unknown state returned\n");
-			break;
+			default:
+				//printstr("Unknown state returned\n");
+				break;
 		}
 
-		//t :> time;
-		//t when timerafter(time+delay) :> void;
+		t :> time;
+		t when timerafter(time+delay) :> void;
 	}
 }
 
