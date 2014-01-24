@@ -4,7 +4,7 @@
  * \file flashlib.c
  *
  *
- * Copyright (c) 2013, Synapticon GmbH & XMOS Ltd
+ * Copyright (c) 2014, Synapticon GmbH & XMOS Ltd
  * All rights reserved.
  * Author: Pavan Kanajar <pkanajar@synapticon.com>
  *

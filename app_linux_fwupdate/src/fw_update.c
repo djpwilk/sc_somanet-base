@@ -42,7 +42,7 @@
  * SOEM write to Beckhoff Automation GmbH, Eiserstraße 5, D-33415 Verl, Germany
  * (www.beckhoff.com).
  * 
- * Copyright 2013, Synapticon GmbH. All rights reserved
+ * Copyright 2014, Synapticon GmbH. All rights reserved
  * (c) Authors : Arthur Ketels 2010 - 2011 (original simpletest)
  * (c) Authors : Frank Jeschke <jeschke@fjes.de> & Pavan Kanajar <pkanajar@synapticon.com>
  * 

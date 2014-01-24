@@ -6,7 +6,7 @@
  *	\brief Example application for flashing binary file over ethercat
  *
  *
- * Copyright (c) 2013, Synapticon GmbH
+ * Copyright (c) 2014, Synapticon GmbH
  * All rights reserved.
  * Author:  Pavan Kanajar <pkanajar@synapticon.com> & Frank Jeschke <jeschke@fjes.de>
  *
@@ -49,14 +49,14 @@
 
 int main(void)
 {
-	//etherCat Comm channels
-	chan coe_in;   ///< CAN from module_ethercat to consumer
-	chan coe_out;  ///< CAN from consumer to module_ethercat
-	chan eoe_in;   ///< Ethernet from module_ethercat to consumer
-	chan eoe_out;  ///< Ethernet from consumer to module_ethercat
+	//EtherCat Communication channels
+	chan coe_in;   // CAN from module_ethercat to consumer
+	chan coe_out;  // CAN from consumer to module_ethercat
+	chan eoe_in;   // Ethernet from module_ethercat to consumer
+	chan eoe_out;  // Ethernet from consumer to module_ethercat
 	chan eoe_sig;
-	chan foe_in;   ///< File from module_ethercat to consumer
-	chan foe_out;  ///< File from consumer to module_ethercat
+	chan foe_in;   // File from module_ethercat to consumer
+	chan foe_out;  // File from consumer to module_ethercat
 	chan pdo_in;
 	chan pdo_out;
 	chan sig_1;

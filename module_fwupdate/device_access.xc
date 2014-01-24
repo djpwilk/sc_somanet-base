@@ -4,7 +4,7 @@
  * \file DeviceAccess.xc
  *
  *
- * Copyright (c) 2013, Synapticon GmbH & XMOS ltd
+ * Copyright (c) 2014, Synapticon GmbH & XMOS ltd
  * All rights reserved.
  * Author: Pavan Kanajar <pkanajar@synapticon.com>
  *
