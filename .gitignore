@@ -16,3 +16,20 @@
 *.exe
 *.out
 *.app
+.metadata/
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+## build files and bins
+.build_Debug/
+.build_Release/
+bin/
+
+## ignore KDE files
+.directory
+
