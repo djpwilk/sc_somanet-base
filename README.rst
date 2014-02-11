@@ -16,17 +16,13 @@ Key Features
 Further information
 =======
 
-   siitool `DOCUMENTATION`_.
+   sc_somanet-base `DOCUMENTATION`_.
 
 Known Issues
 ============
 
    None 
 
-Support
-=======
-
-Issues may be submitted via email at support@synapticon.com
 
 Required software (dependencies)
 ================================
