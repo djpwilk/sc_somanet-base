@@ -31,7 +31,7 @@ Issues may be submitted via email at support@synapticon.com
 Required software (dependencies)
 ================================
 
-    * 'sc_sncn_ethercat'_  (only if using EtherCAT)
+    * `sc_sncn_ethercat`_  (only if using EtherCAT)
 
 License
 =======
