@@ -39,7 +39,7 @@ License
 Please see `LICENSE`_.
 
 
-.. _DOCUMENTATION: None
+.. _DOCUMENTATION: http://synapticon.github.io/sc_somanet-base/
 .. _sc_sncn_ethercat: https://github.com/synapticon/sc_sncn_ethercat
 .. _LICENSE: https://github.com/synapticon/sc_somanet-base/blob/master/LICENSE
 
