@@ -1,4 +1,4 @@
-SOFTWARE COMPONENT Somanet Base 
+Somanet Base SOFTWARE COMPONENT 
 .................................
 .. image:: http://forum.synapticon.com/Themes/MinimalistAndEffective_by_SMFSimple/images/logo.png
 
@@ -27,7 +27,12 @@ Known Issues
 Required software (dependencies)
 ================================
 
-    * `sc_sncn_ethercat`_  (only if using EtherCAT)
+  * `sc_sncn_ethercat`_  (only if using EtherCAT)
+
+Changelog
+=======
+
+  * * `0.9beta`_ (2013-01-24)
 
 License
 =======
