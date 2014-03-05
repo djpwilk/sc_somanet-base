@@ -33,6 +33,4 @@ bin/
 ## ignore KDE files
 .directory
 
-## ignore doxygen sources
-dox
 

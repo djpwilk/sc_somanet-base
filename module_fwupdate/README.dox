@@ -1,7 +1,7 @@
 /**
 
-\page module_fwupdate
-\brief Module that enables the firmware update upon EtherCAT
+\page mods
+\section module_fwupdate
 
-\n
+Module that enables the firmware update upon EtherCAT.\n
 */

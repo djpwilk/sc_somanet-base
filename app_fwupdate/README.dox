@@ -1,6 +1,8 @@
 /**
 
-\page app_fwupdate
-\brief This application provides the functionality to program our SOMANET nodes through EtherCAT (slave side).\n
+\page apps
+\section app_fwupdate
+
+This application provides the functionality to program our SOMANET nodes through EtherCAT (slave side).\n
 
 */

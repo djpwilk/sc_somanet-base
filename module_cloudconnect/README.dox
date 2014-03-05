@@ -1,5 +1,7 @@
 /**
 
-\page module_cloudconnect
-\brief This module contains a core mechanism that establishes a connection with the OBLAC Mothership for monitoring and maintenance purposes.\n
+\page mods
+\section module_cloudconnect
+
+This module contains a core mechanism that establishes a connection with the OBLAC Mothership for monitoring and maintenance purposes.\n
 */

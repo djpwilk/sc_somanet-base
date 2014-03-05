@@ -1,9 +1,9 @@
 /**
 
-\page app_linux_fwupdate
-\brief This application provides the functionality to program our SOMANET nodes through EtherCAT (host side).\n
+\page apps 
+\section app_linux_fwupdate
 
-##How to
+This application provides the functionality to program our SOMANET nodes through EtherCAT (host side).\n
 
 Firmware Update Client for Synapticon SOMANET over Ethercat
 
@@ -15,6 +15,6 @@ Firmware Update Client for Synapticon SOMANET over Ethercat
 		-all   update all slaves connected to the system
     	        -scan  scan the slave/slaves connected and display their serial numbers
 
-specify the ID number after options for these options -s & -seq followed by /path/to/your/file
+specify the ID number after options -s & -seq followed by /path/to/your/file
 
 */
