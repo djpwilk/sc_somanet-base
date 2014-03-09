@@ -9,7 +9,7 @@ Port Declaration and Firmware Update for SOMANET devices.
 <table >
 <tr>
   <td width="150px" height="30px">Latest release: </td>
-  <td width="300px">[0.9beta](https://github.com/synapticon/sc_somanet-base/releases/tag/v0.9-beta) </td>
+  <td width="300px"> 0.9beta </td>
 </tr>
 <tr>
   <td height="30px">Maintainer:</td>
