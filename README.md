@@ -43,15 +43,15 @@ Required software (dependencies)
 
 Changelog
 ---------
-    * [version N](url to version N) (date N)
+   * [version N](url to version N) (date N)
 	* Change 1
 	* Change 2
 
-    * [version 2](url to version 2) (date 2)
+   * [version 2](url to version 2) (date 2)
 	* Change 1
 	* Change 2
 
-    * [version 1](url to version 1) (date 1)
+   * [version 1](url to version 1) (date 1)
 	* Change 1
 	* Change 2
 
