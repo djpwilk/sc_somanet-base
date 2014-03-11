@@ -40,24 +40,24 @@ Known Issues
 Required software (dependencies)
 ---------
 
-* [#dependancy 1](url to dependancy 1)
-* [#dependancy 2](url to dependancy 2)
-* [#dependancy N](url to dependancy N)
+* [dependancy 1](url to dependancy 1)
+* [dependancy 2](url to dependancy 2)
+* [dependancy N](url to dependancy N)
 
 Changelog
 ---------
 
 * [version N](url to version N) (date N)
-	* #Change 1
-	* #Change 2
+	* Change 1
+	* Change 2
 
 * [version 2](url to version 2) (date 2)
-	* #Change 1
-	* #Change 2
+	* Change 1
+	* Change 2
 
 * [version 1](url to version 1) (date 1)
-	* #Change 1
-	* #Change 2
+	* Change 1
+	* Change 2
 
 License
 ---------
