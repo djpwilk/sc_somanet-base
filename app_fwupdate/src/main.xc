@@ -70,7 +70,7 @@ int main(void)
 		}
 
 		on stdcore[0] : {
-			firmware_update(foe_out, foe_in, sig_1); // firmware update over ethercat
+			firmware_update_loop(foe_out, foe_in, sig_1); // firmware update over ethercat
 		}
 
 	}

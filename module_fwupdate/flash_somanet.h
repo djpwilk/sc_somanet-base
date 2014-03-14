@@ -56,7 +56,7 @@
  *    This thread must be on CORE 0 only
  *
  */
-extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset);
+extern void firmware_update_loop(chanend foe_comm, chanend foe_signal, chanend reset);
 
 
 

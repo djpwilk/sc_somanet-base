@@ -155,7 +155,7 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 				break;
 	}
 
-	/* clean up file system to permit next foe transfere*/
+	/* clean up file system to permit next foe transfer */
 
 	foe_comm <: FOE_FILE_FREE;
 	foe_comm :> ctmp;
@@ -169,14 +169,14 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 			//printstr("[check_file_access()] error during filesystem clean up\n"); //FIXME needs handling
 			break;
 		default:
-			//printstr("[check_file_access()] unknon return value\n");
+			//printstr("[check_file_access()] unknown return value\n");
 			break;
 	}
 	return (int)address;
 }
 
 
-extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset)
+extern void firmware_update_loop(chanend foe_comm, chanend foe_signal, chanend reset)
 {
 	timer t;
 	unsigned time = 0;

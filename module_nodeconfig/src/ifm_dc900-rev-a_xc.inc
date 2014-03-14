@@ -21,7 +21,7 @@ on stdcore[3]: port p_ifm_ff2 = XS1_PORT_1I;
 /* BLDC Motor, default port mode */
 on stdcore[3]:          in  port p_ifm_hall = XS1_PORT_4E;
 on stdcore[3]:          in  port p_ifm_encoder = XS1_PORT_4A; /* Encoder and Button 2 */
-on stdcore[3]:          in  port p_ifm_dummy_port = XS1_PORT_16A; /* any unused port */
+on stdcore[3]:          in  port p_ifm_dummy_port = XS1_PORT_16B; /* any unused port */
 on stdcore[3]: buffered out port:32 p_ifm_motor_hi[3] = { XS1_PORT_1K,   /* Hi A */
 							XS1_PORT_1O,   /* Hi B */
 							XS1_PORT_1M }; /* Hi C */

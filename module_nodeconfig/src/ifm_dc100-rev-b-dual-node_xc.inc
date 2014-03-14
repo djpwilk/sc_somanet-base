@@ -32,7 +32,7 @@ on stdcore[7]: port p_ifm_ff2_node_1 = XS1_PORT_1I;
 /* BLDC Motor, default port mode */
 on stdcore[3]:          in  port p_ifm_hall_node_0 = XS1_PORT_4E;
 on stdcore[3]:          in  port p_ifm_encoder_node_0 = XS1_PORT_4A; /* Encoder and Button 2 */
-on stdcore[3]:          in  port p_ifm_dummy_port_node_0 = XS1_PORT_16A; /* any unused port */
+on stdcore[3]:          in  port p_ifm_dummy_port_node_0 = XS1_PORT_16B; /* any unused port */
 on stdcore[3]: buffered out port:32 p_ifm_motor_hi_node_0[3] = { XS1_PORT_1K,   /* Hi A */
 							XS1_PORT_1O,   /* Hi B */
 							XS1_PORT_1M }; /* Hi C */
@@ -42,7 +42,7 @@ on stdcore[3]: buffered out port:32 p_ifm_motor_lo_node_0[3] = { XS1_PORT_1L,   
 							  
 on stdcore[7]:          in  port p_ifm_hall_node_1 = XS1_PORT_4E;
 on stdcore[7]:          in  port p_ifm_encoder_node_1 = XS1_PORT_4A; /* Encoder and Button 2 */
-on stdcore[7]:          in  port p_ifm_dummy_port_node_1 = XS1_PORT_16A; /* any unused port */
+on stdcore[7]:          in  port p_ifm_dummy_port_node_1 = XS1_PORT_16B; /* any unused port */
 on stdcore[7]: buffered out port:32 p_ifm_motor_hi_node_1[3] = { XS1_PORT_1K,   /* Hi A */
 							XS1_PORT_1O,   /* Hi B */
 							XS1_PORT_1M }; /* Hi C */
@@ -54,6 +54,8 @@ on stdcore[7]: buffered out port:32 p_ifm_motor_lo_node_1[3] = { XS1_PORT_1L,   
 /* LEDs, Watchdog */
 on stdcore[3]: out port p_ifm_shared_leds_wden_node_0 = XS1_PORT_4B; /* BlueGreenRed_WDEN */
 on stdcore[7]: out port p_ifm_shared_leds_wden_node_1 = XS1_PORT_4B; /* BlueGreenRed_WDEN */
+on stdcore[3]: out port p_ifm_wd_tick_node_0 = XS1_PORT_1F; /* WatchdogTick */
+on stdcore[7]: out port p_ifm_wd_tick_node_1 = XS1_PORT_1F; /* WatchdogTick */
 
 
 /* Expansion Port */
