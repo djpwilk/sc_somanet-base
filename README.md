@@ -22,7 +22,6 @@ Key Features
    * Port Declaration 
    * Firmware Update over EtherCAT
 
-
 Further information
 ---------
   * sc_somanet-base [DOCUMENTATION](http://synapticon.github.io/sc_somanet-base/)
