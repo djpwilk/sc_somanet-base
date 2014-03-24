@@ -33,4 +33,7 @@ bin/
 ## ignore KDE files
 .directory
 
+#executable files
+fw_update
+slaveinfo
 

@@ -6,9 +6,9 @@
             <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xmos.cdt.toolchain.6811765" moduleId="org.eclipse.cdt.core.settings" name="Debug">
                 <externalSettings />
                 <extensions>
-                    <extension id="com.xmos.cdt.core.XEBinaryParser" point="org.eclipse.cdt.core.BinaryParser" />
                     <extension id="com.xmos.cdt.core.XdeErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
                     <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+                    <extension id="com.xmos.cdt.core.XEBinaryParser" point="org.eclipse.cdt.core.BinaryParser" />
                 </extensions>
             </storageModule>
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -20,34 +20,33 @@
                             <tool id="com.xmos.cdt.xc.compiler.79902725" name="com.xmos.cdt.xc.compiler" superClass="com.xmos.cdt.xc.compiler">
                                 <option id="com.xmos.c.compiler.option.include.paths.24680255" name="com.xmos.c.compiler.option.include.paths" superClass="com.xmos.c.compiler.option.include.paths" valueType="includePath">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                                 <option id="gnu.c.compiler.option.include.paths.41317830" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
+                                </option>
+                                <option id="com.xmos.xc.compiler.option.include.paths.1131959002" superClass="com.xmos.xc.compiler.option.include.paths" valueType="includePath">
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
@@ -68,7 +67,13 @@
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
-                                <inputType id="com.xmos.cdt.xc.compiler.input.22656867" name="XC Sources" superClass="com.xmos.cdt.xc.compiler.input" />
+                                <inputType id="com.xmos.cdt.xc.compiler.input.22656867" name="XC" superClass="com.xmos.cdt.xc.compiler.input" />
+                            </tool>
+                            <tool id="com.xmos.cdt.c.compiler.809033364" name="com.xmos.cdt.c.compiler" superClass="com.xmos.cdt.c.compiler">
+                                <inputType id="com.xmos.cdt.c.compiler.input.c.551318598" name="C" superClass="com.xmos.cdt.c.compiler.input.c" />
+                            </tool>
+                            <tool id="com.xmos.cdt.cxx.compiler.1388376506" name="com.xmos.cdt.cxx.compiler" superClass="com.xmos.cdt.cxx.compiler">
+                                <inputType id="com.xmos.cdt.cxx.compiler.input.cpp.1402879865" name="C++" superClass="com.xmos.cdt.cxx.compiler.input.cpp" />
                             </tool>
                             <tool id="com.xmos.cdt.xc.compiler.base.11111" name="com.xmos.cdt.xc.compiler.base" superClass="com.xmos.cdt.xc.compiler.base">
                                 <option id="gnu.c.compiler.option.include.paths.11111" valueType="includePath" superClass="gnu.c.compiler.option.include.paths">
@@ -76,26 +81,24 @@
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                                 <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                             <tool id="com.xmos.cdt.c.compiler.base.11111" name="com.xmos.cdt.c.compiler.base" superClass="com.xmos.cdt.c.compiler.base">
@@ -104,26 +107,24 @@
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                                 <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                             <tool id="com.xmos.cdt.cpp.compiler.base.11111" name="com.xmos.cdt.cpp.compiler.base" superClass="com.xmos.cdt.cpp.compiler.base">
@@ -132,26 +133,24 @@
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                                 <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                             <tool id="com.xmos.cdt.core.assembler.base.11111" name="com.xmos.cdt.core.assembler.base" superClass="com.xmos.cdt.core.assembler.base">
@@ -160,26 +159,24 @@
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                                 <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                         </toolChain>
@@ -277,9 +274,9 @@
             <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xmos.cdt.toolchain.35626771" moduleId="org.eclipse.cdt.core.settings" name="Release">
                 <externalSettings />
                 <extensions>
-                    <extension id="com.xmos.cdt.core.XEBinaryParser" point="org.eclipse.cdt.core.BinaryParser" />
                     <extension id="com.xmos.cdt.core.XdeErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
                     <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+                    <extension id="com.xmos.cdt.core.XEBinaryParser" point="org.eclipse.cdt.core.BinaryParser" />
                 </extensions>
             </storageModule>
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -291,43 +288,33 @@
                             <tool id="com.xmos.cdt.xc.compiler.21327558" name="com.xmos.cdt.xc.compiler" superClass="com.xmos.cdt.xc.compiler">
                                 <option id="com.xmos.c.compiler.option.include.paths.16701783" name="com.xmos.c.compiler.option.include.paths" superClass="com.xmos.c.compiler.option.include.paths" valueType="includePath">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                                 <option id="gnu.c.compiler.option.include.paths.18492114" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
+                                </option>
+                                <option id="com.xmos.xc.compiler.option.include.paths.1732317064" superClass="com.xmos.xc.compiler.option.include.paths" valueType="includePath">
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
@@ -357,286 +344,116 @@
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
-                                <inputType id="com.xmos.cdt.xc.compiler.input.25449224" name="XC Sources" superClass="com.xmos.cdt.xc.compiler.input" />
+                                <inputType id="com.xmos.cdt.xc.compiler.input.25449224" name="XC" superClass="com.xmos.cdt.xc.compiler.input" />
+                            </tool>
+                            <tool id="com.xmos.cdt.c.compiler.1332927556" name="com.xmos.cdt.c.compiler" superClass="com.xmos.cdt.c.compiler">
+                                <inputType id="com.xmos.cdt.c.compiler.input.c.19408945" name="C" superClass="com.xmos.cdt.c.compiler.input.c" />
+                            </tool>
+                            <tool id="com.xmos.cdt.cxx.compiler.1665001322" name="com.xmos.cdt.cxx.compiler" superClass="com.xmos.cdt.cxx.compiler">
+                                <inputType id="com.xmos.cdt.cxx.compiler.input.cpp.1536667650" name="C++" superClass="com.xmos.cdt.cxx.compiler.input.cpp" />
                             </tool>
                             <tool id="com.xmos.cdt.xc.compiler.base.11111" name="com.xmos.cdt.xc.compiler.base" superClass="com.xmos.cdt.xc.compiler.base">
-                                <option id="gnu.c.compiler.option.include.paths.11111" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.c.compiler.option.include.paths.11111" valueType="includePath" superClass="gnu.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
-                                <option id="com.xmos.c.compiler.option.include.paths.11111" superClass="com.xmos.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                             <tool id="com.xmos.cdt.c.compiler.base.11111" name="com.xmos.cdt.c.compiler.base" superClass="com.xmos.cdt.c.compiler.base">
-                                <option id="gnu.c.compiler.option.include.paths.11111" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.c.compiler.option.include.paths.11111" valueType="includePath" superClass="gnu.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
-                                <option id="com.xmos.c.compiler.option.include.paths.11111" superClass="com.xmos.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                             <tool id="com.xmos.cdt.cpp.compiler.base.11111" name="com.xmos.cdt.cpp.compiler.base" superClass="com.xmos.cdt.cpp.compiler.base">
-                                <option id="gnu.c.compiler.option.include.paths.11111" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.c.compiler.option.include.paths.11111" valueType="includePath" superClass="gnu.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
-                                <option id="com.xmos.c.compiler.option.include.paths.11111" superClass="com.xmos.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                             <tool id="com.xmos.cdt.core.assembler.base.11111" name="com.xmos.cdt.core.assembler.base" superClass="com.xmos.cdt.core.assembler.base">
-                                <option id="gnu.c.compiler.option.include.paths.11111" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="gnu.c.compiler.option.include.paths.11111" valueType="includePath" superClass="gnu.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
-                                <option id="com.xmos.c.compiler.option.include.paths.11111" superClass="com.xmos.c.compiler.option.include.paths" valueType="includePath">
+                                <option id="com.xmos.c.compiler.option.include.paths.11111" valueType="includePath" superClass="com.xmos.c.compiler.option.include.paths">
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/c++/4.2.1/xcore-xmos-elf&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${XMOS_DOC_PATH}/../target/include/gcc&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_display}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_common}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/client}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src/server}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_pwm/module_pwm_symmetrical}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_adc}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/PWM}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/pi_regulator}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/transforms}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks/watchdog}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/control_blocks}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src/util}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_blocks/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_hall/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_dsc_qei/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm/src}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sw_motor_control/module_xmos_pm}&quot;' />
+                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_fwupdate}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig/src}&quot;' />
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_somanet-base/module_nodeconfig}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/canod}&quot;' />
-                                    <listOptionValue builtIn="false" value='&quot;${workspace_loc:/sc_sncn_ethercat/module_ethercat/src/canod}&quot;' />
                                 </option>
                             </tool>
                         </toolChain>
