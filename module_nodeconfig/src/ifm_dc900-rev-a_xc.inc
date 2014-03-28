@@ -13,7 +13,7 @@ on stdcore[3]: in buffered  port:32 p_ifm_adc_misob = XS1_PORT_1C;
 on stdcore[3]: buffered out port:32 p_ifm_adc_sclk_conv_mosib_mosia = XS1_PORT_4C;
 
 /* A4935 control ports */
-on stdcore[3]: out port p_ifm_coastn = XS1_PORT_1G;
+on stdcore[3]: port p_ifm_coastn = XS1_PORT_1G;
 on stdcore[3]: out port p_ifm_esf_rstn_pwml_pwmh = XS1_PORT_4F;
 on stdcore[3]: port p_ifm_ff1 = XS1_PORT_1H;
 on stdcore[3]: port p_ifm_ff2 = XS1_PORT_1I;
