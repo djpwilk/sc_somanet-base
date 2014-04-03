@@ -45,7 +45,7 @@
 #include <stdint.h>
 #include <flash_somanet.h>
 #include <ethercat.h>
-
+#include <ioports.h>
 
 int main(void)
 {
@@ -63,16 +63,14 @@ int main(void)
 
 	par
 	{
-
 		on stdcore[0] : {
 			ecat_init();
 			ecat_handler(coe_out, coe_in, eoe_out, eoe_in, eoe_sig, foe_out, foe_in, pdo_out, pdo_in);
 		}
 
 		on stdcore[0] : {
-			firmware_update_loop(foe_out, foe_in, sig_1); // firmware update over ethercat
+			firmware_update_loop(p_spi_flash, foe_out, foe_in, sig_1); // firmware update over ethercat
 		}
-
 	}
 
 	return 0;

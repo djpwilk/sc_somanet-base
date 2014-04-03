@@ -42,40 +42,18 @@
 #define FLASHSOMANET_H
 
 #include <stdint.h>
-#include <flash.h>
 #include <flashlib.h>
 #include <ethercat.h>
 #include <foefs.h>
 
-#define BUFFER_SIZE 2400	//   flash requirement
-
-
+#define BUFFER_SIZE 2400	//  minimum buffer size for firmware image
 
 /**
  *  \brief Firmware update function
  *    This thread must be on CORE 0 only
  *
  */
-extern void firmware_update_loop(chanend foe_comm, chanend foe_signal, chanend reset);
-
-
-
-/* Internal Functions*/
-extern void flash_setup(int factory);
-
-extern int 	flash_buf_end(void);
-
-extern void chipReset(void);
-
-extern void flash_buffer(char content[], int imageSize, unsigned address);
-
-extern void get_file(chanend foe_out, char filename[]);
-
-/*
- * If a file is available it is read by check_file_access() and the filesystem
- * becomes formated for the next file.
- */
-int check_file_access(chanend foe_comm, unsigned address, chanend reset_out);
+void firmware_update_loop(fl_SPIPorts &SPI, chanend foe_comm, chanend foe_signal, chanend reset);
 
 /* software auto reset functions*/
 void reset_cores(chanend sig_in, chanend sig_out);
