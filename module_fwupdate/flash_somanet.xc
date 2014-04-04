@@ -4,7 +4,8 @@
  * \file flash_somanet.xc
  *
  * \brief Somanet Firmware Update implemtation
- *
+ */
+/*
  *
  * Copyright (c) 2013, Synapticon GmbH
  * All rights reserved.

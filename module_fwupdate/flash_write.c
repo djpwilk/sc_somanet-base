@@ -2,7 +2,8 @@
 /**
  *
  * \file flash_write.c
- *
+ */
+/*
  *
  * Copyright (c) 2013, Synapticon GmbH
  * All rights reserved.
