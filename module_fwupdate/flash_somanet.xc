@@ -1,15 +1,16 @@
 
 /**
- *
  * \file flash_somanet.xc
- *
- * \brief Somanet Firmware Update implemtation
+ * \brief Somanet Firmware Update implementation
+ * \brief Flash device access
+ * \author Frank Jeschke <jeschke@fjes.de>
+ * \author Pavan Kanajar <pkanajar@synapticon.com>
+ * \version 1.0
+ * \date 10/04/2014
  */
 /*
- *
- * Copyright (c) 2013, Synapticon GmbH
+ * Copyright (c) 2014, Synapticon GmbH
  * All rights reserved.
- * Author: Frank Jeschke <jeschke@fjes.de> & Pavan Kanajar <pkanajar@synapticon.com>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:

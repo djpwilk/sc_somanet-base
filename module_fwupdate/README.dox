@@ -1,0 +1,24 @@
+
+/**
+
+\page mods
+\section module_fwupdate
+
+The module enables firmware update server over EtherCat. The server acquires firmware binary file
+from the EtherCat. 
+
+	In order to access this module from your application:
+
+	1. Add module_fwupdate in your app makefile:
+
+	USED_MODULES = module_fwupdate
+
+	2. Include the header files on your code:
+
+	* flash_somanet.h - Firmware update server.
+
+
+Note: The firmware binary file for flashing must be created either in the XDE or in the terminal using 
+*.xe application executable. 
+
+*/

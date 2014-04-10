@@ -1,11 +1,14 @@
 
 /**
- *
  * \file SpecDefinitions.h
+ * \brief Generated file for flash specs - do not edit.
+ * \author Pavan Kanajar <pkanajar@synapticon.com>
+ * \version 1.0
+ * \date 10/04/2014
+ */
+/*
  *
- * Generated file for flash specs - do not edit.
- *
- * Copyright (c) 2013, Synapticon GmbH & XMOS Ltd
+ * Copyright (c) 2014, Synapticon GmbH & XMOS Ltd
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
