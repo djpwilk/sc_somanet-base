@@ -7,37 +7,6 @@
  * \version 1.0
  * \date 10/04/2014
  */
-/*
- * Copyright (c) 2014, Synapticon GmbH
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- * 3. Execution of this software or parts of it exclusively takes place on hardware
- *    produced by Synapticon GmbH.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- * The views and conclusions contained in the software and documentation are those
- * of the authors and should not be interpreted as representing official policies,
- * either expressed or implied, of the Synapticon GmbH.
- *
- */
 
 #include <xs1.h>
 #include <platform.h>
@@ -52,7 +21,7 @@
 
 int main(void)
 {
-	//EtherCat Communication channels
+	/* EtherCat Communication channels */
 	chan coe_in;  	 	// CAN from module_ethercat to consumer
 	chan coe_out;  		// CAN from consumer to module_ethercat
 	chan eoe_in;   		// Ethernet from module_ethercat to consumer
@@ -63,18 +32,61 @@ int main(void)
 	chan pdo_in;
 	chan pdo_out;
 	chan sig_1;
+	chan c_flash_data;
+	chan c_nodes[17];   // only upto 17 nodes on dx can have firmware updated - with current implementation structure
 
 	par
 	{
 		/* Ethercat Communication Handler Loop */
-		on stdcore[COM_TILE] : {
+		on stdcore[COM_TILE] :
+		{
 			ecat_init();
 			ecat_handler(coe_out, coe_in, eoe_out, eoe_in, eoe_sig, foe_out, foe_in, pdo_out, pdo_in);
 		}
 
 		/* Firmware Update Loop */
-		on stdcore[COM_TILE] : {
-			firmware_update_loop(p_spi_flash, foe_out, foe_in, sig_1); // firmware update over ethercat
+		on stdcore[COM_TILE] :
+		{
+			firmware_update_loop(p_spi_flash, foe_out, foe_in, c_flash_data, c_nodes, sig_1); // firmware update over ethercat
+		}
+
+		on stdcore[1]:
+		{
+		    timer t;
+		    int time;
+		    int i = 7;
+		    // Set LED to green
+		    p_core_leds[0] <: 1;
+		    p_core_leds[1] <: 0;
+		    p_core_leds[2] <: 1;
+		    while(1);
+		}
+
+		on stdcore[COM_TILE] :
+		{
+		    int data_length = 256;
+		    int page = 0, i;
+		    unsigned char data[256];
+		    int status;
+		    for(i = 0; i < data_length; i++)
+		    {
+		        data[i] = 0x19;
+		    }
+
+		    // Store data on to flash
+		    status = write_data_to_flash(c_flash_data, page, data, data_length);
+		    printintln(status);
+		    for ( i = 0; i < 256; i++ )
+            {
+                data[i] = 0;
+            }
+
+		    // Retrieve data from flash
+		    status = read_data_flash(c_flash_data, page, data, data_length);
+		    for ( i = 0; i < 256; i++ )
+		    {
+		        printhexln(data[i]);
+		    }
 		}
 	}
 
