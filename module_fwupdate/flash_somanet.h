@@ -33,6 +33,12 @@ int read_data_flash(chanend c_flash_data, unsigned page, unsigned char data[256]
 
 int write_data_to_flash(chanend c_flash_data, unsigned page, unsigned char data[256], unsigned data_length);
 
+// int_32 split into 4 bytes for data storage
+void store_data_array(int offset, int param, char data_array[]);
+
+// pack data bytes into int_32
+int read_data_array(int offset, char data_array[]);
+
 /* software auto reset functions*/
 void reset_cores(chanend sig_in, chanend sig_out);
 

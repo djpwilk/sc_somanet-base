@@ -502,6 +502,23 @@ void firmware_update_loop(fl_SPIPorts &SPI, chanend foe_comm, chanend foe_signal
 	}
 }
 
+
+void store_data_array(int offset, int param, char data_array[])
+{
+    int j = 0;
+    for(int i = offset; i < offset+4; i++)
+    {
+        data_array[i] = (param >> (j*8)) & 0xff;
+        j++;
+    }
+}
+
+int read_data_array(int offset, char data_array[])
+{
+    return ((data_array[3+offset] << 24) | ~(0xff<<24) ) & ((data_array[2+offset] << 16) | ~(0xff<<16))\
+            & ((data_array[1+offset] << 8) | ~(0xff<<8)) & (  data_array[offset] | (0xffffffff<<8));
+}
+
 void reset_cores(chanend sig_in, chanend sig_out)
 {
 	int read;
