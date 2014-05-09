@@ -6,37 +6,6 @@
  * \version 1.0
  * \date 10/04/2014
  */
-/*
- * Copyright (c) 2014, Synapticon GmbH
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- * 3. Execution of this software or parts of it exclusively takes place on hardware
- *    produced by Synapticon GmbH.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- * The views and conclusions contained in the software and documentation are those
- * of the authors and should not be interpreted as representing official policies,
- * either expressed or implied, of the Synapticon GmbH.
- *
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,7 +13,6 @@
 #include <flashlib.h>
 #include <platform.h>
 #include <flash.h>
-
 
 void flash_erase()
 {
@@ -55,8 +23,6 @@ extern int flash_connect(fl_SPIPorts *SPI);
 
 void flash_setup(int factory, fl_SPIPorts *SPI)  // could have arguments to specify the upgarde image
 {
-	 //fl_BootImageInfo bii;  // struct to hold image info
-
 	 //communicate with spi flash
 	 if( 0 == flash_connect(SPI) )
 	 {
@@ -64,23 +30,9 @@ void flash_setup(int factory, fl_SPIPorts *SPI)  // could have arguments to spec
 		 exit(1);
 	 }
 
-	 // get Factory details into bootinfo struct bii
-	 /*if(0 != fl_getFirstBootImage(&bii))
-	 {
-		  printf("%s\n", "No factory image found, erase not required");
-	 }
-	 else
-	 {	printf("%s\n", " factory image found");
-		 if(factory == 1)
-		 {
-
-
-		 }
-	 }*/
 	 fl_setProtection(0);
 	 flash_erase();
 	 // Disable flash protection for writing image
-
 }
 
 void connect_to_flash(fl_SPIPorts *SPI)
@@ -91,6 +43,7 @@ void connect_to_flash(fl_SPIPorts *SPI)
         exit(1);
     }
 }
+
 void flash_buffer(char content[2400], int image_size, unsigned address)
 {
 	int  i = 0;
@@ -113,18 +66,8 @@ void flash_buffer(char content[2400], int image_size, unsigned address)
 	}
 }
 
-
 int flash_buf_end(void)
 {
 	fl_endWriteImage();
 	return 12;
 }
-
-
-
-
-
-
-
-
-

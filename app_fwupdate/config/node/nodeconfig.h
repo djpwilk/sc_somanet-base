@@ -13,6 +13,6 @@
 
 #define SOMANET_CORE c22
 #define SOMANET_COM null
-#define SOMANET_IFM dc900-rev-a
+//#define SOMANET_IFM dc900-rev-a
 //dc100-rev-b-dual-node
 //dc900-rev-a

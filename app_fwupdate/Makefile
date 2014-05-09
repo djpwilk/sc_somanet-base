@@ -3,12 +3,13 @@
 # or a valid argument for the --target option when compiling
 
 TARGET = C22_Workaround
+#SOMANET-Dual-C22-Ifm-BLDC-DX-via-IFM
 #SOMANET-4DX-Chain-C22-IfmBLDC
 #SOMANET-3DX-Chain-C22-IfmBLDC
 #SOMANET-Dual-C22-Ifm-BLDC-DX-via-IFM
 #SOMANET-3DX-Chain-C22-IfmBLDC
 #SOMANET-4DX-Chain-C22-IfmBLDC
-# C22_Workaround   SOMANET-C22
+#    SOMANET-C22
 
 # The APP_NAME variable determines the name of the final .xe file. It should
 # not include the .xe postfix. If left blank the name will default to

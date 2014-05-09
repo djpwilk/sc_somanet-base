@@ -9,7 +9,6 @@
  * \date 10/04/2014
  */
 
-
 #include <platform.h>
 #include <stdio.h>
 #include <flash_somanet.h>
@@ -352,56 +351,63 @@ void firmware_update_dx(fl_SPIPorts &SPI, chanend c_node, int node_number)
         {
             /* Firmware update over DX (signaled over c_node) / Read Permanent Config */
             case c_node :> node_number:
-            c_node :> command;
-            address = 0;
-            if(command == 0x34)
-            {
-                flash_setup(1, SPI);
-                //indicate ready to fw_update
-                while(1)
+                c_node :> command;
+                address = 0;
+                if(command == 0x34)
                 {
-                    select
+                    flash_setup(1, SPI);
+                    //indicate ready to fw_update
+                    while(1)
                     {
-                        case c_node :> cmd:
-                            if(cmd == 10)
-                            {
-                                c_node <: READY_TO_FLASH;
-                                end_flag = 0;
-                                while(1)
+                        select
+                        {
+                            case c_node :> cmd:
+                                if(cmd == 10)
                                 {
-                                    for (i = 0; i < size; i++)
+                                    c_node <: READY_TO_FLASH;
+                                    end_flag = 0;
+                                    while(1)
                                     {
-                                        c_node :> buffer[i];
+                                        select
+                                        {
+                                            case c_node :> size:
+                                                for (i = 0; i < size; i++)
+                                                {
+                                                    c_node :> buffer[i];
+                                                }
+                                                flash_buffer(buffer, size, address);
+                                                address += size;
+                                                end_flag = 1;
+                                                break;
+                                        }
+                                        if(end_flag == 1)
+                                            break;
                                     }
-                                    flash_buffer(buffer, size, address);
-                                    address += size;
-                                    end_flag = 1;
-                                    break;
                                 }
-                            }
+                                else if(cmd == 100)
+                                {
+                                    c_node :> cmd;
+                                    flash_buf_end();
+                                    flag = 3;
+                                }
+                                break;
+                        }
+                        if(flag == 3)
+                        {
+                            flag = 1;
                             break;
-                    }
-                    if(flag == 3)
-                    {
-                        flag = 1;
-                        break;
+                        }
                     }
                 }
-            }
-            break;
+                break;
         }
-         if(cmd == 100)
-         {
-             c_node :> cmd;
-             flash_buf_end();
-             flag = 3;
-         }
         //printstrln("out of loop");
     }
 }
 
+
 void firmware_update_loop(fl_SPIPorts &SPI, chanend foe_comm, chanend foe_signal, chanend c_flash_data,\
-        chanend c_nodes[17], chanend reset)
+        chanend c_nodes[], chanend reset)
 {
 	timer t;
 	unsigned time = 0;
@@ -502,6 +508,61 @@ void firmware_update_loop(fl_SPIPorts &SPI, chanend foe_comm, chanend foe_signal
 	}
 }
 
+/*
+ * example for storing/retrieving motor parameters to/from the data array
+ */
+void config_to_array()
+{
+    unsigned char data_array[256] = {0};
+    int param = 0xf1f2f3f4;
+    int param_read;
+    int i, k, no_of_data = 4;
+
+    // store data and update flag bit at 5th byte
+    for(i = 0, k = 0; i < 5*no_of_data; i = i + 5, k++)
+    {
+        store_data_array(i, param, data_array);
+        data_array[4 + 5*(k/8)] = data_array[4 + 5*(k/8)] | 1<<(k%8);
+    }
+
+    // read data
+    for(int i = 0, k= 0; i < 5*no_of_data; i = i + 5, k++)
+    {
+        param_read = read_data_array(i, data_array);
+        if( (data_array[4 + 5*(k/8)] & 1<<(k%8)) >> (k%8) ) // updated
+            printhexln(param_read);
+    }
+}
+
+/*
+ * example shows how to store/retreive data array to/from flash memory
+ */
+void store_and_read_data(chanend c_flash_data)
+{
+    int data_length = 256;
+    int page = 0, i;
+    unsigned char data[256];
+    int status;
+    for(i = 0; i < data_length; i++)
+    {
+        data[i] = 0x19;
+    }
+
+    // Store data on to flash
+    status = write_data_to_flash(c_flash_data, page, data, data_length);
+    printintln(status);
+    for ( i = 0; i < 256; i++ )
+    {
+        data[i] = 0;
+    }
+
+    // Retrieve data from flash
+    status = read_data_flash(c_flash_data, page, data, data_length);
+    for ( i = 0; i < 256; i++ )
+    {
+        printhexln(data[i]);
+    }
+}
 
 void store_data_array(int offset, int param, char data_array[])
 {
@@ -558,5 +619,3 @@ void reset_last_core(chanend sig_in)
 		}
 	}
 }
-
-
