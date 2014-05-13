@@ -32,13 +32,20 @@ Known Issues
 
 Required software (dependencies)
 ---------
-  * [sc_sncn_ethercat](https://github.com/synapticon/sc_sncn_ethercat) (only if using EtherCAT)
+  * [sc_sncn_ethercat][sc_sncn_ethercat] (only if using EtherCAT)
 
 Changelog
 ---------
+  * [1.0](https://github.com/synapticon/sc_somanet-base/releases/tag/v1.0) (2014-04-17) 
+	* Port Declaration for configuration of GPIO Digital ports
   * [0.9beta](https://github.com/synapticon/sc_somanet-base/releases/tag/v0.9-beta) (2013-01-24)
 
 License
 ---------
 
-Please see [LICENSE](http://synapticon.github.io/sc_somanet-base/legal.html).
+Please see [LICENSE](https://github.com/synapticon/sc_somanet-base/blob/master/LICENSE.md).
+
+
+[sc_sncn_ethercat]:https://github.com/synapticon/sc_sncn_ethercat
+[sc_pwm]: https://github.com/synapticon/sc_pwm
+[sc_somanet-base]: https://github.com/synapticon/sc_somanet-base
