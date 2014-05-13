@@ -1,7 +1,10 @@
-/**
-
-\page mods
-\section module_nodeconfig
+Node Configuration Module
+=======================
+<a href="https://github.com/synapticon/sc_sncn_motorctrl_sin/blob/master/SYNAPTICON.md">
+<img align="left" src="https://s3-eu-west-1.amazonaws.com/synapticon-resources/images/logos/synapticon_fullname_blackoverwhite_280x48.png"/>
+</a>
+<br/>
+<br/>
 
 It carries out the code parameterization necessary for the various hardware configurations possible with SOMANET. Define here your COM, Core and IFM boards.
 
@@ -16,4 +19,3 @@ It carries out the code parameterization necessary for the various hardware conf
 - Refer to the *.inc files included within this module to get a list of supported boards
 - Include ioports.h in every source file that needs to access I/O ports
 
-*/
