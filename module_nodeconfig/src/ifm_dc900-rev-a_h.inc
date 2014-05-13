@@ -11,7 +11,7 @@ extern buffered out port:32 p_ifm_adc_sclk_conv_mosib_mosia;
 
 
 /* A4935 control ports */
-extern out port p_ifm_coastn;
+extern port p_ifm_coastn;
 extern out port p_ifm_esf_rstn_pwml_pwmh;
 extern     port p_ifm_ff1;
 extern     port p_ifm_ff2;
@@ -31,8 +31,6 @@ extern out port p_ifm_shared_leds_wden; /* BlueGreenRed_WDEN */
 extern out port p_ifm_wd_tick;
 
 /* Expansion Port */
-extern port p_ifm_ext_d0;
-extern port p_ifm_ext_d1;
-extern port p_ifm_ext_d2;
-extern port p_ifm_ext_d3;
+extern port p_ifm_ext_d[4];
+
 

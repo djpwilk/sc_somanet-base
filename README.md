@@ -6,10 +6,12 @@ Somanet Base SOFTWARE COMPONENT
 
 Port Declaration and Firmware Update for SOMANET devices.
 
+ * See the [MANUAL](http://synapticon.github.io/sc_somanet-base/)
+
 <table >
 <tr>
   <td width="150px" height="30px">Latest release: </td>
-  <td width="300px"><a href="https://github.com/synapticon/sc_somanet-base/releases/tag/v0.9-beta">0.9beta</a></td>
+  <td width="300px"><a href="https://github.com/synapticon/sc_somanet-base/releases/tag/v1.0">1.0</a></td>
 </tr>
 <tr>
   <td height="30px">Maintainer:</td>
@@ -22,6 +24,13 @@ Key Features
    * Port Declaration 
    * Firmware Update over EtherCAT
 
+<<<<<<< HEAD
+=======
+Known Issues
+---------
+  * None
+
+>>>>>>> 15996aaad80109e15acc3fa11f9c16ff94531ca8
 Required software (dependencies)
 ---------
   * [sc_sncn_ethercat][sc_sncn_ethercat] (only if using EtherCAT)

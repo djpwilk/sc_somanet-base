@@ -1,14 +1,16 @@
 
 /**
- *
- * \file app_fwupdate main.xc
- *
- *	\brief Example application for flashing binary file over ethercat
- *
- *
+ * \file main.xc
+ * \brief Example application for flashing binary file over ethercat
+ * \author Pavan Kanajar <pkanajar@synapticon.com>
+ * \author Frank Jeschke <jeschke@fjes.de>
+ * \version 1.0
+ * \date 10/04/2014
+ */
+
+/*
  * Copyright (c) 2014, Synapticon GmbH
  * All rights reserved.
- * Author:  Pavan Kanajar <pkanajar@synapticon.com> & Frank Jeschke <jeschke@fjes.de>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -38,6 +40,7 @@
  *
  */
 
+
 #include <xs1.h>
 #include <platform.h>
 #include <print.h>
@@ -45,37 +48,38 @@
 #include <stdint.h>
 #include <flash_somanet.h>
 #include <ethercat.h>
+#include <ioports.h>
 
+#define COM_TILE 0
 
 int main(void)
 {
 	//EtherCat Communication channels
-	chan coe_in;   // CAN from module_ethercat to consumer
-	chan coe_out;  // CAN from consumer to module_ethercat
-	chan eoe_in;   // Ethernet from module_ethercat to consumer
-	chan eoe_out;  // Ethernet from consumer to module_ethercat
+	chan coe_in;  	 	// CAN from module_ethercat to consumer
+	chan coe_out;  		// CAN from consumer to module_ethercat
+	chan eoe_in;   		// Ethernet from module_ethercat to consumer
+	chan eoe_out;  		// Ethernet from consumer to module_ethercat
 	chan eoe_sig;
-	chan foe_in;   // File from module_ethercat to consumer
-	chan foe_out;  // File from consumer to module_ethercat
+	chan foe_in;   		// File from module_ethercat to consumer
+	chan foe_out;  		// File from consumer to module_ethercat
 	chan pdo_in;
 	chan pdo_out;
 	chan sig_1;
 
 	par
 	{
-
-		on stdcore[0] : {
+		/* Ethercat Communication Handler Loop */
+		on stdcore[COM_TILE] : {
 			ecat_init();
 			ecat_handler(coe_out, coe_in, eoe_out, eoe_in, eoe_sig, foe_out, foe_in, pdo_out, pdo_in);
 		}
 
-		on stdcore[0] : {
-			firmware_update(foe_out, foe_in, sig_1); // firmware update over ethercat
+		/* Firmware Update Loop */
+		on stdcore[COM_TILE] : {
+			firmware_update_loop(p_spi_flash, foe_out, foe_in, sig_1); // firmware update over ethercat
 		}
-
 	}
 
 	return 0;
 }
-
 

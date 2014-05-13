@@ -1,14 +1,17 @@
 
 /**
- *
  * \file flash_somanet.xc
- *
- * \brief Somanet Firmware Update implemtation
- *
- *
+ * \brief Somanet Firmware Update implementation
+ * \brief Flash device access
+ * \author Frank Jeschke <jeschke@fjes.de>
+ * \author Pavan Kanajar <pkanajar@synapticon.com>
+ * \version 1.0
+ * \date 10/04/2014
+ */
+
+/*
  * Copyright (c) 2014, Synapticon GmbH
  * All rights reserved.
- * Author: Frank Jeschke <jeschke@fjes.de> & Pavan Kanajar <pkanajar@synapticon.com>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -49,25 +52,14 @@
 #define IDLE 0;
 
 
-/* initializers defined in XN file
-* and available via somanet header files */
-// SPI port definitions
-
-on stdcore[0]:fl_SPIPorts SPI = { PORT_SPI_MISO,
- 					PORT_SPI_SS,
- 					PORT_SPI_CLK,
- 					PORT_SPI_MOSI,
- 					XS1_CLKBLK_2 };
-
 int write_state = IDLE;
 int start_flash = START_FLASH;
 int end_flash = END_FLASH;
 int flash1 = FLASH;
 
 
-//open SPI connection routine called in flash_write routine
-
-int flash_connect() {
+/* open SPI connection routine called in flash_write routine */
+int flash_connect(fl_SPIPorts &SPI) {
   int res;
   res = fl_connect(SPI);
   if( res != 0 ) {
@@ -76,18 +68,26 @@ int flash_connect() {
   return 1;
 }
 
-extern void flash_setup(int factory);// with params as file path & name
+int flash_buf_end(void);
 
-void chipReset(void)				//	auto reset from software
+void flash_buffer(char content[], int imageSize, unsigned address);
+
+extern void flash_setup(int factory, fl_SPIPorts &SPI);
+
+/*
+ * If a file is available it is read by check_file_access() and the filesystem
+ * becomes formated for the next file.
+ */
+int check_file_access(fl_SPIPorts &SPI, chanend foe_comm, unsigned address, chanend reset_out);
+
+void core_reset(void)				//	auto reset from software
 {
 	unsigned x;
 	read_sswitch_reg(get_core_id(), 6, x);
 	write_sswitch_reg(get_core_id(), 6, x);
 }
 
-
-
-int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
+int check_file_access(fl_SPIPorts &SPI, chanend foe_comm, unsigned address, chanend reset_out)
 {
 	char buffer[BUFFER_SIZE];
 	unsigned i=0;
@@ -113,8 +113,6 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 						if(ctmp == 0x34)
 						{
 							write_state = start_flash;
-							//flash_setup(1);
-							//address=0;
 						}
 						else if(ctmp == 0x99)
 						{
@@ -130,7 +128,7 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 
 				if(write_state == start_flash)
 				{
-					flash_setup(1);
+					flash_setup(1, SPI);
 					address=0;
 					write_state = flash1;
 				}
@@ -155,7 +153,7 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 				break;
 	}
 
-	/* clean up file system to permit next foe transfere*/
+	/* clean up file system to permit next foe transfer */
 
 	foe_comm <: FOE_FILE_FREE;
 	foe_comm :> ctmp;
@@ -169,14 +167,14 @@ int check_file_access(chanend foe_comm, unsigned address, chanend reset_out)
 			//printstr("[check_file_access()] error during filesystem clean up\n"); //FIXME needs handling
 			break;
 		default:
-			//printstr("[check_file_access()] unknon return value\n");
+			//printstr("[check_file_access()] unknown return value\n");
 			break;
 	}
 	return (int)address;
 }
 
 
-extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset)
+void firmware_update_loop(fl_SPIPorts &SPI, chanend foe_comm, chanend foe_signal, chanend reset)
 {
 	timer t;
 	unsigned time = 0;
@@ -217,7 +215,7 @@ extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset)
 
 			case FOE_FILE_ACK:
 				/* File is ready read it and print to std. out */
-				address = check_file_access(foe_comm, address, reset);
+				address = check_file_access(SPI, foe_comm, address, reset);
 				break;
 
 			default:
@@ -232,7 +230,7 @@ extern void firmware_update(chanend foe_comm, chanend foe_signal, chanend reset)
 
 
 
-/* request a file from the master */   /// firmware update ///
+/* request a file from the master */
 extern void get_file(chanend foe_out, char filename[])
 {
 	unsigned i, pos=0;
@@ -256,17 +254,18 @@ void reset_cores(chanend sig_in, chanend sig_out)
 {
 	int read;
 	timer tmr1;
-	unsigned time=0, delay=100000;
+	unsigned time = 0;
+	unsigned delay = 100000;
 
 	while(1)
 	{
-		sig_in:>read;
-		if(read==1)
+		sig_in :> read;
+		if(read == 1)
 		{
 			sig_out <: read;
 			tmr1 :> time;
-			tmr1 when timerafter(time+delay) :> void;
-			chipReset();
+			tmr1 when timerafter(time + delay) :> void;
+			core_reset();
 			break;
 		}
 	}
@@ -276,15 +275,16 @@ void reset_last_core(chanend sig_in)
 {
 	int read;
 	timer tmr1;
-	unsigned time=0, delay=100000;
+	unsigned time = 0;
+	unsigned delay = 100000;
 	while(1)
 	{
-		sig_in:>read;
-		if(read==1)
+		sig_in :> read;
+		if(read == 1)
 		{
 			tmr1 :> time;
-			tmr1 when timerafter(time+delay) :> void;
-			chipReset();
+			tmr1 when timerafter(time + delay) :> void;
+			core_reset();
 			break;
 		}
 	}

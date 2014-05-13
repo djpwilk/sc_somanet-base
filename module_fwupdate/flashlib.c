@@ -1,12 +1,14 @@
 
 /**
- *
  * \file flashlib.c
- *
- *
+ * \brief Flash library
+ * \version 1.0
+ * \date 10/04/2014
+ */
+
+/*
  * Copyright (c) 2014, Synapticon GmbH & XMOS Ltd
  * All rights reserved.
- * Author: Pavan Kanajar <pkanajar@synapticon.com>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -986,4 +988,5 @@ int fl_int_copySpec( fl_DeviceSpec* dest )
   memcpy( (void*)dest, (void*)g_flashAccess, sizeof( fl_DeviceSpec ) );
   return(0);
 }
+
 
