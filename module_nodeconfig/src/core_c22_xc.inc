@@ -7,7 +7,7 @@
  * Core C22
  ************/
  /* SPI port definitions */
-on stdcore[1]: fl_SPIPorts p_spi_flash = { PORT_SPI_MISO,
+on stdcore[0]: fl_SPIPorts p_spi_flash = { PORT_SPI_MISO,
  								PORT_SPI_SS,
  								PORT_SPI_CLK,
  								PORT_SPI_MOSI,
