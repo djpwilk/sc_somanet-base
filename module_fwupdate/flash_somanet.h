@@ -46,12 +46,4 @@ void reset_cores(chanend sig_in, chanend sig_out);
 
 void reset_last_core(chanend sig_in);
 
-int flash_buf_end(void);
-
-void flash_buffer(char content[], int imageSize, unsigned address);
-
-extern void flash_setup(int factory, fl_SPIPorts &SPI);
-
-extern void connect_to_flash(fl_SPIPorts &SPI);
-
 #endif /* FLASHSOMANET_H */
