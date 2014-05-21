@@ -24,4 +24,7 @@ Dependencies: module_fwupdate module_nodeconfig sc_sncn_ethercat/module_ethercat
 
 Note: Fore both Core C22 module and Core C21 module, COM_TILE is located on CORE 0.
 
+Flash binary preparation with data-partition for any somanet application
+xflash --factory app.xe --boot-partition-size 0x40000 -o bin_file
+
 */
