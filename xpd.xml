@@ -11,12 +11,14 @@
             <keyword>XScope</keyword>
         </component>
     </components>
-    <location>git@github.com:djpwilk/sc_somanet-base.git</location>
-	<exclude_dir>module_com-detect</exclude_dir>
-	<exclude_dir>module_cloudconnect</exclude_dir>
-	<exclude_dir>module_powermgmt</exclude_dir>
-	<exclude_dir>module_refclk</exclude_dir>
+    <exclude_dir>module_com-detect</exclude_dir>
+    <exclude_dir>module_cloudconnect</exclude_dir>
+    <exclude_dir>module_powermgmt</exclude_dir>
+    <exclude_dir>module_refclk</exclude_dir>
+    <exclude_dir>app_test_com-detect</exclude_dir>
+    <exclude_dir>app_test_refclk</exclude_dir>
 	
+    <location>git@github.com:djpwilk/sc_somanet-base.git</location>
     <name>sc_somanet-base</name>
     <maintainer>support@synapticon.com</maintainer>
     <vendor>Synapticon</vendor>
