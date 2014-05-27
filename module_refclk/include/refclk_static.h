@@ -45,7 +45,7 @@
 
 
 
-/* Returns default reference clock frequency in MHz (REFCLK_DEFAULT_MHZ) 
+/* Returns default reference clock frequency in MHz (REFCLK_DEFAULT_MHZ)
    if called without parameter (T is the "empty token") or T otherwise */
 #define GET_REFCLK(T) PP_IF(IS_EMPTY_TOKEN(T)) (REFCLK_DEFAULT_MHZ,T)
 

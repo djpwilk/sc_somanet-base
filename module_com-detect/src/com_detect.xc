@@ -178,7 +178,7 @@ com_module_type_t com_detect(port p)
                 calculate_deviations(UNPACK_TO_TICKS(com_detect_rc_delays[i-1].specific_delay),
                                      t_result,
                                      ticks_current_element);
-                
+
             if (deviation_lower < deviation_upper) {
                 return com_detect_rc_delays[i-1].module_type;
             } else {
