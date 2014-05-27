@@ -1,7 +1,7 @@
 XScope wrapper
 ==============
 
-:scope: General Description
+:scope: General Use
 :description: An XScope wrapper with a possibility to disable all probes
 :keywords: XScope
 :boards: SOMANET
@@ -14,11 +14,11 @@ Key Features
 Description
 -----------
 
-The module allows easily enabling or disabling all XScope probes without removing them from the code.
+The module allows easily enabling or disabling all XScope functions without removing them from the code.
 
 - To enable the XScope use: ::
 
-  #def USE_XSCOPE
+  #define USE_XSCOPE
 
 - To desable the XScope remove the define. All XScope functions will be replaced with NOPs
 
