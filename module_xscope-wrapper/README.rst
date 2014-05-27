@@ -20,4 +20,8 @@ The module allows easily enabling or disabling all XScope probes without removin
 
   #def USE_XSCOPE
 
-- To desable the XScope remove the define. All XScope functions will be replaced with NOPs.
+- To desable the XScope remove the define. All XScope functions will be replaced with NOPs
+
+- This may be added to CFLAGS in your project's Makefile: ::
+
+  CFLAGS += -DUSE_XSCOPE
