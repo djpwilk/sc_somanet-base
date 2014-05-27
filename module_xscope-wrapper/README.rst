@@ -24,4 +24,4 @@ The module allows easily enabling or disabling all XScope functions without remo
 
 - This may be added to CFLAGS in your project's Makefile: ::
 
-  CFLAGS += -DUSE_XSCOPE
+   CFLAGS += -DUSE_XSCOPE
