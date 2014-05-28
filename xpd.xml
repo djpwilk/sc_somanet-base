@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <xpd>
     <components>
-        <component description = "the NODE CONFIGURATION is designed to define various hardware configurations possible with different SOMANET modules" type = "demoCode" scope = "General Use" path = "module_nodeconfig" local = "false" id = "module_nodeconfig" name = "NODE CONFIGURATION module">
+        <component description = "the NODE CONFIGURATION is used to define various hardware configurations possible with different SOMANET modules" type = "demoCode" scope = "General Use" path = "module_nodeconfig" local = "false" id = "module_nodeconfig" name = "SOMANET NODE CONFIGURATION module">
             <board>SOMANET</board>
-            <keyword>node configuration</keyword>
-            <keyword>ports mapping</keyword>
+            <keyword>SOMANET</keyword>
         </component>
         <component description = "An XScope wrapper with a possibility to disable all probes" type = "demoCode" scope = "General Use" path = "module_xscope-wrapper" local = "false" id = "module_xscope-wrapper" name = "XScope wrapper">
             <board>SOMANET</board>
-            <keyword>XScope</keyword>
+            <keyword>SOMANET</keyword>
+            <keyword>xSCOPE</keyword>
         </component>
     </components>
     <exclude_dir>module_com-detect</exclude_dir>
@@ -20,6 +20,7 @@
     <location>git@github.com:djpwilk/sc_somanet-base.git</location>
     <name>sc_somanet-base</name>
     <maintainer>support@synapticon.com</maintainer>
+    <release parenthash = "01d31bce825ecbd572874278060bd35a15b28b7a" version = "1.0.0beta0"></release>
     <vendor>Synapticon</vendor>
     <version_defines></version_defines>
     <xcore_repo>git://github.com/xcore/sc_somanet-base.git</xcore_repo>
