@@ -16,12 +16,12 @@ Description
 
 The module allows easily enabling or disabling all XScope functions without removing them from the code.
 
-   * To enable the XScope use: ::
+To enable the xSCOPE use: ::
 
-  #define USE_XSCOPE
+      #define USE_XSCOPE
 
-   * To desable the XScope remove the define. All XScope functions will be replaced with NOPs
+To disable the xSCOPE remove the define. All xSCOPE functions will be replaced with NOPs
 
-   * This may be added to CFLAGS in your project's Makefile: ::
+This may be added to CFLAGS in your project's Makefile: ::
 
    CFLAGS += -DUSE_XSCOPE
