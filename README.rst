@@ -1,8 +1,9 @@
 SOMANET BASE Software Component 
 ...............................
 
-:Latest release: 1.0.0beta0
+:Latest release: 1.0.0beta1
 :Maintainer: support@synapticon.com
+
 
 ...............................
 .. image:: https://s3-eu-west-1.amazonaws.com/synapticon-resources/images/logos/synapticon_fullname_blackoverwhite_280x48.png
