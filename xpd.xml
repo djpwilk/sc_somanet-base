@@ -4,7 +4,8 @@
     <location>git@github.com:djpwilk/sc_somanet-base.git</location>
     <name>sc_somanet-base</name>
     <release parenthash = "01d31bce825ecbd572874278060bd35a15b28b7a" version = "1.0.0beta0" githash = "95783f7b0596aaea4b54ea0c2e6e6789a6b67035"></release>
-    <release parenthash = "92aaaa26b49f0750ef8aec0bd83570f5424d0ca8" version = "1.0.0beta1"></release>
+    <release parenthash = "92aaaa26b49f0750ef8aec0bd83570f5424d0ca8" version = "1.0.0beta1" githash = "252b62723f8592e3c10c743d78f80850167d99de"></release>
+    <release parenthash = "2d4a154675b2d9e60a62af05ffcdfceb9ae15463" version = "1.0.0beta0"></release>
     <version_defines></version_defines>
     <xpd_version>1.0</xpd_version>
 </xpd>
