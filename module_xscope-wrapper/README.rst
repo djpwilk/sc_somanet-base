@@ -1,26 +1,26 @@
-XScope wrapper
-==============
+SOMANET xSCOPE Usage wrapper
+============================
 
 :scope: General Use
-:description: An XScope wrapper with a possibility to disable all probes
-:keywords: XScope
+:description: An xSCOPE wrapper to turn xSCOPE on and off in SOMANET blocks
+:keywords: xSCOPE
 :boards: SOMANET
 
 Key Features
 ------------
 
-  * Enabling and disabling XScope without removing XScope functions from the code 
+  * Enabling and disabling xSCOPE without removing xSCOPE functions from the SOMANET code 
 
 Description
 -----------
 
-The module allows easily enabling or disabling all XScope functions without removing them from the code.
+The module allows easily enabling or disabling all xSCOPE functions without removing them from the code.
 
-- To enable the XScope use: ::
+- To enable the xSCOPE use: ::
 
   #define USE_XSCOPE
 
-- To desable the XScope remove the define. All XScope functions will be replaced with NOPs
+- To desable the xSCOPE remove the define. All xSCOPE functions will be replaced with NOPs
 
 - This may be added to CFLAGS in your project's Makefile: ::
 
