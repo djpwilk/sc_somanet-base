@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<xpd>
+    <components>
+        <component description = "the NODE CONFIGURATION is designed to define various hardware configurations possible with different SOMANET modules" type = "demoCode" scope = "General Use" path = "module_nodeconfig" local = "false" id = "module_nodeconfig" name = "SOMANET NODE CONFIGURATION module">
+            <board>SOMANET</board>
+            <keyword>node configuration</keyword>
+            <keyword>ports mapping</keyword>
+        </component>
+        <component description = "An xSCOPE wrapper to turn xSCOPE on and off in SOMANET blocks" type = "demoCode" scope = "General Use" path = "module_xscope-wrapper" local = "false" id = "module_xscope-wrapper" name = "SOMANET xSCOPE Usage wrapper">
+            <board>SOMANET</board>
+            <keyword>xSCOPE</keyword>
+        </component>
+    </components>
+    <description>The SOMANET BASE software component is a collection of essential modules required for the majority of SOMANET-based applications.</description>
+    <location>git@github.com:djpwilk/sc_somanet-base.git</location>
+    <name>sc_somanet-base</name>
+    <maintainer>Synapticon</maintainer>
+    <partnumber>XM-005805-DH</partnumber>
+    <release parenthash = "2d4a154675b2d9e60a62af05ffcdfceb9ae15463" version = "1.0.0beta0"></release>
+    <subpartnumber>XM-005806-SM</subpartnumber>
+    <vendor>XMOS</vendor>
+    <version_defines></version_defines>
+    <xcore_repo>git://github.com/xcore/sc_somanet-base.git</xcore_repo>
+    <xpd_version>1.0</xpd_version>
+</xpd>
