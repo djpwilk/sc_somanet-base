@@ -1,6 +1,11 @@
 sc_somanet-base Change Log
 ==========================
 
+1.0.1
+-----
+
+  * Minor changes to documentation, READMEs
+
 1.0.0
 -----
 

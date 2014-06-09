@@ -16,7 +16,7 @@
     <name>sc_somanet-base</name>
     <maintainer>Synapticon</maintainer>
     <partnumber>XM-005805-DH</partnumber>
-    <release parenthash = "2d4a154675b2d9e60a62af05ffcdfceb9ae15463" version = "1.0.0beta0"></release>
+    <release parenthash = "2d4a154675b2d9e60a62af05ffcdfceb9ae15463" version = "1.0.0beta0" githash = "522d59520c03ff0cb5a77a3c80d0d8b4c035e685"></release>
     <subpartnumber>XM-005806-SM</subpartnumber>
     <vendor>XMOS</vendor>
     <version_defines></version_defines>
