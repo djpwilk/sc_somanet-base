@@ -1,7 +1,7 @@
 SOMANET BASE Software Component 
 ...............................
 
-:Latest release: 1.0.1beta0
+:Latest release: 1.0.1beta1
 :Maintainer: Synapticon
 :Description: The SOMANET BASE software component is a collection of essential modules required for the majority of SOMANET-based applications.
 
