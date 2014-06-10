@@ -15,9 +15,12 @@
     <location>git://github.com/synapticon/sc_somanet-base.git</location>
     <name>sc_somanet-base</name>
     <maintainer>Synapticon</maintainer>
+    <partnumber>XM-005810-DH</partnumber>
     <release parenthash = "2d4a154675b2d9e60a62af05ffcdfceb9ae15463" version = "1.0.0beta0" githash = "522d59520c03ff0cb5a77a3c80d0d8b4c035e685"></release>
     <release parenthash = "251f28e0e89cd91e4d59b76940e2c25d39e93e10" version = "1.0.1beta0" githash = "94753ef278124e110a820b434818368ce1dda5d9"></release>
+    <subpartnumber>XM-005811-SM</subpartnumber>
     <vendor>XMOS</vendor>
     <version_defines></version_defines>
+    <xcore_repo>git://github.com/xcore/sc_somanet-base.git</xcore_repo>
     <xpd_version>1.0</xpd_version>
 </xpd>
